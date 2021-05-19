@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  web:
+    container_name: docker-node-mongo
+    restart: always
+    build: .
+    ports:
+      - 3000:3000
+  #   links:
+  #     - mongo
+  # api:
+  #   container_name: api
+  #   build: ./movie-app/server
+  #   ports:
+  #     - '8080:8080'
+  #   depends_on: 
+  #     - mongo
+  # mongo:
+  #   container_name: mongo
+  #   image: mongo
+  #   ports:
+  #     - '27017:27017'
+    
